@@ -27,6 +27,7 @@
                       :jvm-opts ["-Dconfig.resource=client.conf"]}
              :junit {:dependencies [[junit/junit "4.12"]
                                     [com.typesafe.akka/akka-testkit_2.12 "2.5.19"]]
+                     :resource-paths ["resources/test"]
                      :java-source-paths ["src/test/java"]
                      :jvm-opts ["-Dconfig.resource=junit.conf"]}}
   :main jay.mars.market.App)
